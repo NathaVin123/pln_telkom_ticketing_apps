@@ -23,7 +23,6 @@ interface ButtonProps {
   size?: 'small' | 'medium' | 'large';
 }
 
-
 export const DButton = (props: ButtonProps) => {
     return (
         <Button
@@ -42,7 +41,6 @@ export const DButton = (props: ButtonProps) => {
                                 : 65,
                 justifyContent: 'center',
                 alignItems: 'center',
-                alignContent: 'center',
             }}
             style={{
                 borderRadius: 25,
@@ -51,53 +49,21 @@ export const DButton = (props: ButtonProps) => {
                 props.color?.backgroundColor ??
                 (props.error ? theme.colors.error : theme.colors.primary)
             }
-            onPress={props.onPress}>
+            onPress={props.onPress}
+        >
             {Platform.OS === 'ios' ? <IOS {...props} /> : <Android {...props} />}
         </Button>
     );
-}
-
-const Android = (props: ButtonProps) => {
-    return (
-        <>
-            {props.icon !== undefined ? (
-                <>
-                    <Image
-                        source={props.icon}
-                        style={{
-                            width: 20,
-                            height: 20,
-                            tintColor: props.color?.iconColor ?? theme.colors.onPrimary,
-                        }}
-                        resizeMode={'contain'}
-                    />
-                    <DSizedBox width={s0} />
-                </>
-            ) : undefined}
-            <Text
-                style={[
-                    Raleway.Body4,
-                    {
-                        color: props.color?.textColor ?? theme.colors.onPrimary,
-                    },
-                ]}>
-                {props.children}
-            </Text>
-        </>
-    );
 };
 
-const IOS = (props: ButtonProps) => {
+const Android = (props: ButtonProps) => {
     return (
         <View
             style={{
                 flex: 1,
-                // width: '100%',
                 justifyContent: 'center',
                 alignItems: 'center',
-                alignContent: 'center',
-                flexDirection: 'row',
-                // backgroundColor: 'white',
+                flexDirection: props.iconPosition === 'right' ? 'row-reverse' : 'row',
                 paddingTop: 5,
             }}>
             {props.icon !== undefined ? (
@@ -120,7 +86,47 @@ const IOS = (props: ButtonProps) => {
                     {
                         color: props.color?.textColor ?? theme.colors.onPrimary,
                     },
-                ]}>
+                ]}
+            >
+                {props.children}
+            </Text>
+        </View>
+    );
+};
+
+const IOS = (props: ButtonProps) => {
+    return (
+        <View
+            style={{
+                flex: 1,
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: props.iconPosition === 'right' ? 'row-reverse' : 'row',
+                paddingTop: 5,
+            }}
+        >
+            {props.icon !== undefined ? (
+                <>
+                    <Image
+                        source={props.icon}
+                        style={{
+                            width: 20,
+                            height: 20,
+                            tintColor: props.color?.iconColor ?? theme.colors.onPrimary,
+                        }}
+                        resizeMode={'contain'}
+                    />
+                    <DSizedBox width={s0} />
+                </>
+            ) : undefined}
+            <Text
+                style={[
+                    Raleway.Body4,
+                    {
+                        color: props.color?.textColor ?? theme.colors.onPrimary,
+                    },
+                ]}
+            >
                 {props.children}
             </Text>
         </View>
