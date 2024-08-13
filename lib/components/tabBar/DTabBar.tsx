@@ -1,5 +1,5 @@
 import {
-  ImageSourcePropType,
+  Animated,
   TextProps,
   TouchableOpacity,
   useWindowDimensions,
@@ -12,13 +12,12 @@ import {
   TabView,
 } from 'react-native-tab-view';
 import {useState} from 'react';
-import {s1} from '../size/DSize.tsx';
+import {Raleway} from '../../core/font/font';
+import {theme} from '../../core/theme/theme';
 
 interface InterfaceDTabBar {
   screen: any;
   route: any[];
-  icon: ImageSourcePropType[];
-  changeTitle?: boolean | true;
   tintColor?: string;
   backgroundColor?: string;
   style?: {
@@ -28,7 +27,7 @@ interface InterfaceDTabBar {
   paddingHorizontal?: number;
 }
 
-export const DTabBar = (props : InterfaceDTabBar) => {
+export const DTabBar = (props: InterfaceDTabBar) => {
     const layout = useWindowDimensions();
 
     const renderScene = SceneMap(props.screen);
@@ -39,24 +38,29 @@ export const DTabBar = (props : InterfaceDTabBar) => {
     });
 
     const handleIndexChange = (index: number) => {
-        setState({index: index, routes: state.routes});
+        setState({ index: index, routes: state.routes });
     };
 
-    const renderTabBar = (propsTabBar: SceneRendererProps & {navigationState: NavigationState<{key: string; title: string}>;})  => {
+    const renderTabBar = (
+        propsTabBar: SceneRendererProps & {
+            navigationState: NavigationState<{ key: string; title: string }>;
+        }
+    ) => {
         return (
-            <View style={{
-                flexDirection: 'row',
-                paddingHorizontal: props.paddingHorizontal ?? 0,
-            }}>
+            <View
+                style={{
+                    flexDirection: 'row',
+                    paddingHorizontal: props.paddingHorizontal ?? 0,
+                }}
+            >
                 {propsTabBar.navigationState.routes.map((route: any, i: number) => {
+                    const isActive = state.index === i;
                     return (
                         <TouchableOpacity
                             key={i}
                             style={{
                                 flex: 1,
                                 alignItems: 'center',
-                                backgroundColor: props.backgroundColor ?? '#EDEEF3',
-                                paddingTop: s1,
                             }}
                             onPress={() => {
                                 setState({
@@ -65,45 +69,34 @@ export const DTabBar = (props : InterfaceDTabBar) => {
                                 });
                             }}
                         >
-                            {/*<Animated.View*/}
-                            {/*    style={{*/}
-                            {/*        alignItems: 'center',*/}
-                            {/*        flexDirection:*/}
-                            {/*            props.style?.position === 'top'*/}
-                            {/*                ? 'column'*/}
-                            {/*                : props.style?.position === 'bottom'*/}
-                            {/*                    ? 'column-reverse'*/}
-                            {/*                    : props.style?.position === 'left'*/}
-                            {/*                        ? 'row'*/}
-                            {/*                        : props.style?.position === 'right'*/}
-                            {/*                            ? 'row-reverse'*/}
-                            {/*                            : 'row',*/}
-                            {/*    }}*/}
-                            {/*>*/}
-                            {/*    <Animated.Text*/}
-                            {/*        style={*/}
-                            {/*            [*/}
-                            {/*                Raleway.Overline4,*/}
-                            {/*                {*/}
-                            {/*                    // flex: 1,*/}
-                            {/*                    paddingTop: s1,*/}
-                            {/*                    color:*/}
-                            {/*                        state.index === i ? theme.colors.primary : '#BDBDBD',*/}
-                            {/*                },*/}
-                            {/*            ]*/}
-                            {/*        }>*/}
-                            {/*        {route.title}*/}
-                            {/*    </Animated.Text>*/}
-                            {/*</Animated.View>*/}
-                            {/*<Animated.View*/}
-                            {/*    style={{*/}
-                            {/*        width: '100%',*/}
-                            {/*        marginTop: 4,*/}
-                            {/*        height: 2,*/}
-                            {/*        borderBottomWidth: 1,*/}
-                            {/*        borderBottomColor: '#BDBDBD',*/}
-                            {/*    }}*/}
-                            {/*/>*/}
+                            <Animated.View
+                                style={{
+                                    alignItems: 'center',
+                                }}
+                            >
+                                <Animated.Text
+                                    style={[
+                                        Raleway.Overline1,
+                                        {
+                                            color: isActive ? theme.colors.primary : '#BDBDBD',
+                                        },
+                                    ]}
+                                >
+                                    {route.title}
+                                </Animated.Text>
+                                {isActive && (
+                                    <View
+                                        style={{
+                                            position: 'absolute',
+                                            bottom: -10, // Position below the text
+                                            width: '100%', // Adjust width as needed
+                                            height: 4, // Adjust height as needed
+                                            borderRadius: 2,
+                                            backgroundColor: theme.colors.primary,
+                                        }}
+                                    />
+                                )}
+                            </Animated.View>
                         </TouchableOpacity>
                     );
                 })}
@@ -113,12 +106,12 @@ export const DTabBar = (props : InterfaceDTabBar) => {
 
     return (
         <TabView
-            swipeEnabled={false}
+            swipeEnabled={true}
             renderTabBar={renderTabBar}
             navigationState={state}
             renderScene={renderScene}
             onIndexChange={handleIndexChange}
-            initialLayout={{width: layout.width}}
+            initialLayout={{ width: layout.width }}
         />
     );
-}
+};

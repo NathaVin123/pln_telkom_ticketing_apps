@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* pln_telkom_ticketing_appsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pln_telkom_ticketing_appsTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-pln_telkom_ticketing_apps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-pln_telkom_ticketing_apps.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E8E8FB4C80DC41D49FFF21F3 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA524D71FE7748DDAC0D1B6C /* Raleway-Bold.ttf */; };
-		412DAE89248D46408212898B /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B87296083FBF4D61B7DDE799 /* Raleway-ExtraBold.ttf */; };
-		7AD082BDE4A54855A2CB601C /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF43AD39685140CBA6719887 /* Raleway-ExtraLight.ttf */; };
-		E8CF09ABCF424AB69BA4451E /* Raleway-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE32EFA950D448D5AC50805B /* Raleway-Heavy.ttf */; };
-		D4E171CD11D74B7A8164FDA4 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AE9CEA393594498AC474DBE /* Raleway-Italic.ttf */; };
 		36E1409E71EE413489458ECC /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFCC6FEB0D184AED835CCE3E /* Raleway-Light.ttf */; };
-		FECE447CE49549AA9B61A4CD /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29B97C9BD93547488CD8E517 /* Raleway-Medium.ttf */; };
+		412DAE89248D46408212898B /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B87296083FBF4D61B7DDE799 /* Raleway-ExtraBold.ttf */; };
 		65476D08390D4127A7C13B14 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 494C780168E24CA9BDD8B4E2 /* Raleway-Regular.ttf */; };
-		7D2AB5AB69FC4CE28EDD73BB /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BB31505115E4F8C8DFAF57F /* Raleway-SemiBold.ttf */; };
 		654ECAEC2F0045DCAED68940 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8754843A0EF148E0A27335F5 /* Raleway-Thin.ttf */; };
+		7AD082BDE4A54855A2CB601C /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF43AD39685140CBA6719887 /* Raleway-ExtraLight.ttf */; };
+		7D2AB5AB69FC4CE28EDD73BB /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BB31505115E4F8C8DFAF57F /* Raleway-SemiBold.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D4E171CD11D74B7A8164FDA4 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AE9CEA393594498AC474DBE /* Raleway-Italic.ttf */; };
+		E8CF09ABCF424AB69BA4451E /* Raleway-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE32EFA950D448D5AC50805B /* Raleway-Heavy.ttf */; };
+		E8E8FB4C80DC41D49FFF21F3 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA524D71FE7748DDAC0D1B6C /* Raleway-Bold.ttf */; };
+		FECE447CE49549AA9B61A4CD /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29B97C9BD93547488CD8E517 /* Raleway-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,24 +45,18 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = pln_telkom_ticketing_apps/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = pln_telkom_ticketing_apps/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = pln_telkom_ticketing_apps/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-pln_telkom_ticketing_apps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pln_telkom_ticketing_apps.debug.xcconfig"; path = "Target Support Files/Pods-pln_telkom_ticketing_apps/Pods-pln_telkom_ticketing_apps.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-pln_telkom_ticketing_apps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pln_telkom_ticketing_apps.release.xcconfig"; path = "Target Support Files/Pods-pln_telkom_ticketing_apps/Pods-pln_telkom_ticketing_apps.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.debug.xcconfig"; path = "Target Support Files/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-pln_telkom_ticketing_apps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pln_telkom_ticketing_apps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97C9BD93547488CD8E517 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Medium.ttf"; path = "../lib/assets/font/Raleway/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		494C780168E24CA9BDD8B4E2 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../lib/assets/font/Raleway/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		5AE9CEA393594498AC474DBE /* Raleway-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Italic.ttf"; path = "../lib/assets/font/Raleway/Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		7BB31505115E4F8C8DFAF57F /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBold.ttf"; path = "../lib/assets/font/Raleway/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = pln_telkom_ticketing_apps/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.release.xcconfig"; path = "Target Support Files/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.release.xcconfig"; sourceTree = "<group>"; };
+		8754843A0EF148E0A27335F5 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Thin.ttf"; path = "../lib/assets/font/Raleway/Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		AE32EFA950D448D5AC50805B /* Raleway-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Heavy.ttf"; path = "../lib/assets/font/Raleway/Raleway-Heavy.ttf"; sourceTree = "<group>"; };
+		AF43AD39685140CBA6719887 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLight.ttf"; path = "../lib/assets/font/Raleway/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		AFCC6FEB0D184AED835CCE3E /* Raleway-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Light.ttf"; path = "../lib/assets/font/Raleway/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		B87296083FBF4D61B7DDE799 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBold.ttf"; path = "../lib/assets/font/Raleway/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BA524D71FE7748DDAC0D1B6C /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../lib/assets/font/Raleway/Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		BA524D71FE7748DDAC0D1B6C /* Raleway-Bold.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold.ttf"; path = "../lib/assets/font/Raleway/Raleway-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B87296083FBF4D61B7DDE799 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraBold.ttf"; path = "../lib/assets/font/Raleway/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AF43AD39685140CBA6719887 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraLight.ttf"; path = "../lib/assets/font/Raleway/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AE32EFA950D448D5AC50805B /* Raleway-Heavy.ttf */ = {isa = PBXFileReference; name = "Raleway-Heavy.ttf"; path = "../lib/assets/font/Raleway/Raleway-Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5AE9CEA393594498AC474DBE /* Raleway-Italic.ttf */ = {isa = PBXFileReference; name = "Raleway-Italic.ttf"; path = "../lib/assets/font/Raleway/Raleway-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AFCC6FEB0D184AED835CCE3E /* Raleway-Light.ttf */ = {isa = PBXFileReference; name = "Raleway-Light.ttf"; path = "../lib/assets/font/Raleway/Raleway-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		29B97C9BD93547488CD8E517 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; name = "Raleway-Medium.ttf"; path = "../lib/assets/font/Raleway/Raleway-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		494C780168E24CA9BDD8B4E2 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../lib/assets/font/Raleway/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7BB31505115E4F8C8DFAF57F /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold.ttf"; path = "../lib/assets/font/Raleway/Raleway-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8754843A0EF148E0A27335F5 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; name = "Raleway-Thin.ttf"; path = "../lib/assets/font/Raleway/Raleway-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-pln_telkom_ticketing_apps.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,12 +108,27 @@
 			name = pln_telkom_ticketing_apps;
 			sourceTree = "<group>";
 		};
+		1F6D294902FF43ACA8EA17C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA524D71FE7748DDAC0D1B6C /* Raleway-Bold.ttf */,
+				B87296083FBF4D61B7DDE799 /* Raleway-ExtraBold.ttf */,
+				AF43AD39685140CBA6719887 /* Raleway-ExtraLight.ttf */,
+				AE32EFA950D448D5AC50805B /* Raleway-Heavy.ttf */,
+				5AE9CEA393594498AC474DBE /* Raleway-Italic.ttf */,
+				AFCC6FEB0D184AED835CCE3E /* Raleway-Light.ttf */,
+				29B97C9BD93547488CD8E517 /* Raleway-Medium.ttf */,
+				494C780168E24CA9BDD8B4E2 /* Raleway-Regular.ttf */,
+				7BB31505115E4F8C8DFAF57F /* Raleway-SemiBold.ttf */,
+				8754843A0EF148E0A27335F5 /* Raleway-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-pln_telkom_ticketing_apps.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,31 +168,9 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-pln_telkom_ticketing_apps.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-pln_telkom_ticketing_apps.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		1F6D294902FF43ACA8EA17C6 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				BA524D71FE7748DDAC0D1B6C /* Raleway-Bold.ttf */,
-				B87296083FBF4D61B7DDE799 /* Raleway-ExtraBold.ttf */,
-				AF43AD39685140CBA6719887 /* Raleway-ExtraLight.ttf */,
-				AE32EFA950D448D5AC50805B /* Raleway-Heavy.ttf */,
-				5AE9CEA393594498AC474DBE /* Raleway-Italic.ttf */,
-				AFCC6FEB0D184AED835CCE3E /* Raleway-Light.ttf */,
-				29B97C9BD93547488CD8E517 /* Raleway-Medium.ttf */,
-				494C780168E24CA9BDD8B4E2 /* Raleway-Regular.ttf */,
-				7BB31505115E4F8C8DFAF57F /* Raleway-SemiBold.ttf */,
-				8754843A0EF148E0A27335F5 /* Raleway-Thin.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -196,12 +179,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "pln_telkom_ticketing_appsTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,13 +197,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "pln_telkom_ticketing_apps" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,7 +217,8 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -316,118 +294,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps/Pods-pln_telkom_ticketing_apps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps/Pods-pln_telkom_ticketing_apps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps/Pods-pln_telkom_ticketing_apps-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pln_telkom_ticketing_apps-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps/Pods-pln_telkom_ticketing_apps-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps/Pods-pln_telkom_ticketing_apps-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps/Pods-pln_telkom_ticketing_apps-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests/Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -461,7 +327,6 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -488,7 +353,6 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-pln_telkom_ticketing_apps-pln_telkom_ticketing_appsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -512,7 +376,6 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-pln_telkom_ticketing_apps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -539,7 +402,6 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-pln_telkom_ticketing_apps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -597,6 +459,7 @@
 				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -680,6 +543,7 @@
 				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;

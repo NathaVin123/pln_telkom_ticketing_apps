@@ -4,7 +4,7 @@ export const LandingViewModel = () => {
   const navigation = useNavigation<any>();
 
   const toLogin = async () => {
-    navigation.navigate('LoginView');
+    navigation.replace('LoginView');
   };
 
   return {

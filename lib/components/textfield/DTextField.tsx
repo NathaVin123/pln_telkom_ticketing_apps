@@ -103,24 +103,24 @@ export const DTextField = (props: InterfaceDTextField) => {
                 borderBottomWidth: 2,
                 backgroundColor: props.backgroundColor
                   ? props.backgroundColor
-                  : theme.colors.scrim,
+                  : theme.colors.onPrimary,
                 borderRadius: 10,
-                borderColor: theme.colors.scrim,
+                // borderColor: theme.colors.scrim,
               }
             : {
                 borderWidth: 2,
                 borderBottomWidth: 2,
                 backgroundColor: props.backgroundColor
                   ? props.backgroundColor
-                  : theme.colors.scrim,
+                  : theme.colors.onPrimary,
                 borderRadius: 10,
                 elevation: 10,
-                borderColor: theme.colors.scrim,
-                shadowColor: theme.colors.scrim,
-                shadowOffset: {
-                  width: 5,
-                  height: 5,
-                },
+                // borderColor: theme.colors.scrim,
+                // shadowColor: theme.colors.scrim,
+                // shadowOffset: {
+                //   width: 5,
+                //   height: 5,
+                // },
               }
         }
         maxLength={props.maxLength ?? 100}

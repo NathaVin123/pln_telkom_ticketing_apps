@@ -8,7 +8,7 @@ export const RoutePreLogin = () => {
   return (
     <Stack.Group>
       <Stack.Screen
-        name={'landingView'}
+        name={'LandingView'}
         component={LandingView}
         options={{headerShown: false}}></Stack.Screen>
       <Stack.Screen
