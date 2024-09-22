@@ -16,6 +16,7 @@ import {DashboardTabView} from '../DashboardTabView.tsx';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import React from 'react';
 import {DashboardViewModel} from '../DashboardViewModel.ts';
+import {DDataTable} from '../../../../components/dataTable/DDataTable.tsx';
 import ScrollView = Animated.ScrollView;
 
 export const HomeDashboard = () => {
@@ -120,6 +121,12 @@ export const HomeDashboard = () => {
               {controller.monitoringViewState ? (
                 <View>
                   <Text style={Raleway.Body1}>Monitoring Status</Text>
+                  <DDataTable
+                    cell={controller.dataMonitoringStatus.cell}
+                    items={controller.dataMonitoringStatus.items}
+                    onPress={() => {
+                      console.log('Monitoring Status Clicked');
+                    }}></DDataTable>
                 </View>
               ) : (
                 <DashboardTabView></DashboardTabView>

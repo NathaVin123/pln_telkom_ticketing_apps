@@ -6,7 +6,7 @@ export const baseUrl = (): string => {
   return URLDEV;
 };
 
-const timeOut = 60000; // Timeout set to 60 seconds (60000 milliseconds)
+const timeOut = 10000; // Timeout set to 60 seconds (60000 milliseconds)
 
 interface ReqInterface {
     path: string;
@@ -50,16 +50,16 @@ function handleError(error: AxiosError) {
     } else if (error.request) {
         Toast.show({
             type: 'error',
-            text1: 'No response received',
-            text2: 'The request was made but no response was received.',
+            text1: 'Something went wrong. Please try again later.',
+            text2: '',
             position: 'bottom',
         });
         console.error('No response received: ', error.request);
     } else {
         Toast.show({
             type: 'error',
-            text1: 'Error setting up request',
-            text2: error.message,
+            text1: 'Something went wrong. Please try again later.',
+            text2: '',
             position: 'bottom',
         });
         console.error('Error setting up request: ', error.message);

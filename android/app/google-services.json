@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "145434582653",
+    "project_id": "testnotification-53010",
+    "storage_bucket": "testnotification-53010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145434582653:android:682f803d01065167049b14",
+        "android_client_info": {
+          "package_name": "com.pln_telkom_ticketing_apps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSA3dkKiZjtpFXUwIOwJcvJHBtMupoA5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

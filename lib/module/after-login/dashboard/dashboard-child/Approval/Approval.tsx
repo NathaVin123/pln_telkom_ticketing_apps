@@ -72,7 +72,10 @@ export const Approval = () => {
               <DDataTable
                 cell={controller.dataApproval.cell}
                 items={controller.dataApproval.items}
-                onPress={() => {
+                onPress={(item: any) => {
+                  console.log(
+                    'Go to approval details : ' + JSON.stringify(item.ticketNo),
+                  );
                   // controller.navigation.navigate('ApprovalDetail');
                 }}></DDataTable>
             </View>

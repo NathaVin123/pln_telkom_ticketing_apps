@@ -32,9 +32,13 @@ export const LoginViewModel = () => {
         password: password,
       };
 
-      console.log(loginData);
+      const byPassLogin = true;
 
-      // const response = await axios.post(URLDEV + 'login-mobile', loginData);
+      if(byPassLogin) {
+        await navigation.replace('DashboardView');
+      }
+
+      console.log('Login Request : ' +JSON.stringify(loginData));
 
       const response = await POST<LoginResponse>({
         path: 'login-mobile',
