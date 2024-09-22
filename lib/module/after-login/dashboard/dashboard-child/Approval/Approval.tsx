@@ -33,7 +33,8 @@ export const Approval = () => {
             refreshControl={
               <RefreshControl
                 refreshing={controller.refreshing}
-                onRefresh={controller.onRefresh}></RefreshControl>
+                onRefresh={controller.onRefresh}
+              />
             }>
             <View
               style={{
@@ -58,8 +59,7 @@ export const Approval = () => {
                   height={150}
                 />
               </View>
-              <DSizedBox
-                height={Dimensions.get('window').height / 2}></DSizedBox>
+              <DSizedBox height={Dimensions.get('window').height / 2} />
             </View>
           </GestureScrollView>
         </View>
@@ -77,9 +77,11 @@ export const Approval = () => {
                     'Go to approval details : ' + JSON.stringify(item.ticketNo),
                   );
                   // controller.navigation.navigate('ApprovalDetail');
-                }}></DDataTable>
+                }}
+              />
             </View>
-          }></DBottomSheet>
+          }
+        />
       </GestureHandlerRootView>
     </>
   );

@@ -14,13 +14,14 @@ export const ApprovalDetail = () => {
 
   return (
     <>
-      <StatusBar translucent backgroundColor="transparent"></StatusBar>
+      <StatusBar translucent backgroundColor="transparent" />
 
       <DAppBar
         onBackPress={() => {
           controller.navigation.goBack();
         }}
-        title={'PLN TELKOM Ticketing Apps'}></DAppBar>
+        title={'PLN TELKOM Ticketing Apps'}
+      />
 
       <View
         style={{flex: 1, padding: s2, backgroundColor: theme.colors.onPrimary}}>
@@ -32,13 +33,14 @@ export const ApprovalDetail = () => {
           }}>
           <View style={{flexDirection: 'column'}}>
             <Text style={Raleway.H3}>Approval</Text>
-            <DSizedBox height={s2}></DSizedBox>
+            <DSizedBox height={s2} />
             <Text style={Raleway.Overline1}>Approval Detail</Text>
           </View>
           <DImage
             path={require('../../../../../assets/png/Logo_PLN.png')}
             width={100}
-            height={100}></DImage>
+            height={100}
+          />
         </View>
         {/*Form Detail Approval*/}
         <View>
@@ -46,12 +48,14 @@ export const ApprovalDetail = () => {
             disabled
             label={'Ticket ID'}
             onChangeText={() => {}}
-            value={''}></DTextField>
+            value={''}
+          />
           <DTextField
             disabled
             label={'Tanggal Pelaporan'}
             onChangeText={() => {}}
-            value={''}></DTextField>
+            value={''}
+          />
           {/*<DDatePicker*/}
           {/*  disabled={true}*/}
           {/*  isDate={true}*/}
@@ -65,28 +69,33 @@ export const ApprovalDetail = () => {
             disabled
             label={'Lokasi'}
             onChangeText={() => {}}
-            value={''}></DTextField>
+            value={''}
+          />
           <DTextField
             disabled
             label={'Input Ticket'}
             onChangeText={() => {}}
-            value={''}></DTextField>
-          <DTextField label={'Bidang'} onChangeText={() => {}}></DTextField>
+            value={''}
+          />
+          <DTextField label={'Bidang'} onChangeText={() => {}} />
           <DTextField
             disabled
             label={'Jenis Pekerjaan'}
             onChangeText={() => {}}
-            value={''}></DTextField>
+            value={''}
+          />
           <DTextField
             disabled
             label={'Jenis Peralatan'}
             onChangeText={() => {}}
-            value={''}></DTextField>
+            value={''}
+          />
           <DTextField
             disabled
             label={'Jenis Gangguan'}
             onChangeText={() => {}}
-            value={''}></DTextField>
+            value={''}
+          />
         </View>
       </View>
     </>

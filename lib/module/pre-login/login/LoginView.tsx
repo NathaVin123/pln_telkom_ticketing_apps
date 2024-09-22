@@ -27,24 +27,26 @@ export function LoginView() {
           width={150}
           height={150}
         />
-        <DSizedBox height={s8}></DSizedBox>
+        <DSizedBox height={s8} />
         <View
           style={{
             alignSelf: 'flex-start',
             paddingLeft: s2,
             paddingRight: s2,
-          }}></View>
+          }}
+        />
         <Text style={Raleway.H3}>Welcome Back!</Text>
-        <DSizedBox height={s1}></DSizedBox>
+        <DSizedBox height={s1} />
         <Text style={Raleway.Overline1}>Please enter your details</Text>
-        <DSizedBox height={s1}></DSizedBox>
+        <DSizedBox height={s1} />
         <DTextField
           width={300}
           label={''}
           onChangeText={(e: string) => {
             controller.setNik(e);
           }}
-          placeholder={'Username/NIK'}></DTextField>
+          placeholder={'Username/NIK'}
+        />
         <DTextField
           secureTextEntry={true}
           width={300}
@@ -52,8 +54,9 @@ export function LoginView() {
           onChangeText={(e: string) => {
             controller.setPassword(e);
           }}
-          placeholder={'Password'}></DTextField>
-        <DSizedBox height={s2}></DSizedBox>
+          placeholder={'Password'}
+        />
+        <DSizedBox height={s2} />
         <DButton
           disabled={controller.enableSubmit()}
           onPress={() => {
@@ -78,4 +81,4 @@ export function LoginView() {
       )}
     </>
   );
-};
+}

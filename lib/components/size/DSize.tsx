@@ -16,5 +16,3 @@ export const s7 = spacerValue * 7;
 export const s8 = spacerValue * 8;
 export const s9 = spacerValue * 9;
 export const s10 = spacerValue * 10;
-
-

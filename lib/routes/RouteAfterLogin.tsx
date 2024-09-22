@@ -10,11 +10,13 @@ export const RouteAfterLogin = () => {
       <Stack.Screen
         name={'DashboardView'}
         component={DashboardView}
-        options={{headerShown: false}}></Stack.Screen>
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name={'ApprovalDetail'}
         component={ApprovalDetail}
-        options={{headerShown: false}}></Stack.Screen>
+        options={{headerShown: false}}
+      />
     </Stack.Group>
   );
 };

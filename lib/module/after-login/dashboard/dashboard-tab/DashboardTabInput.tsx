@@ -41,7 +41,7 @@ export const DashboardTabInput = () => {
 
   return (
     <>
-      <DPieChartWithPercent data={data}></DPieChartWithPercent>
+      <DPieChartWithPercent data={data} />
     </>
   );
 };

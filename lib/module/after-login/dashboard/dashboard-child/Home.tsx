@@ -40,7 +40,8 @@ export const HomeDashboard = () => {
             refreshControl={
               <RefreshControl
                 refreshing={controller.refreshing}
-                onRefresh={controller.onRefresh}></RefreshControl>
+                onRefresh={controller.onRefresh}
+              />
             }>
             <View
               style={{
@@ -65,8 +66,7 @@ export const HomeDashboard = () => {
                   height={150}
                 />
               </View>
-              <DSizedBox
-                height={Dimensions.get('window').height / 2}></DSizedBox>
+              <DSizedBox height={Dimensions.get('window').height / 2} />
             </View>
           </ScrollView>
         </View>
@@ -126,13 +126,15 @@ export const HomeDashboard = () => {
                     items={controller.dataMonitoringStatus.items}
                     onPress={() => {
                       console.log('Monitoring Status Clicked');
-                    }}></DDataTable>
+                    }}
+                  />
                 </View>
               ) : (
-                <DashboardTabView></DashboardTabView>
+                <DashboardTabView />
               )}
             </View>
-          }></DBottomSheet>
+          }
+        />
       </GestureHandlerRootView>
     </>
   );

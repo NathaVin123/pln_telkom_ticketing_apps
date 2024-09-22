@@ -10,11 +10,13 @@ export const RoutePreLogin = () => {
       <Stack.Screen
         name={'LandingView'}
         component={LandingView}
-        options={{headerShown: false}}></Stack.Screen>
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name={'LoginView'}
         component={LoginView}
-        options={{headerShown: false}}></Stack.Screen>
+        options={{headerShown: false}}
+      />
     </Stack.Group>
   );
 };

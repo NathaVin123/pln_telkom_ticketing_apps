@@ -15,7 +15,7 @@ export const DashboardTabView = (props: any) => {
     return (
       <View style={{paddingHorizontal: s2, paddingVertical: s4}}>
         <Text style={Raleway.Body2}>Dashboard Status</Text>
-        <DashboardTabStatus></DashboardTabStatus>
+        <DashboardTabStatus />
       </View>
     );
   };
@@ -24,7 +24,7 @@ export const DashboardTabView = (props: any) => {
     return (
       <View style={{paddingHorizontal: s2, paddingVertical: s4}}>
         <Text style={Raleway.Body2}>Dashboard Input</Text>
-        <DashboardTabInput></DashboardTabInput>
+        <DashboardTabInput />
       </View>
     );
   };
@@ -33,7 +33,7 @@ export const DashboardTabView = (props: any) => {
     return (
       <View style={{paddingHorizontal: s2, paddingVertical: s4}}>
         <Text style={Raleway.Body2}>Dashboard Gangguan</Text>
-        <DashboardTabGangguan></DashboardTabGangguan>
+        <DashboardTabGangguan />
       </View>
     );
   };
@@ -42,7 +42,7 @@ export const DashboardTabView = (props: any) => {
     return (
       <View style={{paddingHorizontal: s2, paddingVertical: s4}}>
         <Text style={Raleway.Body2}>Dashboard Pekerjaan</Text>
-        <DashboardTabPekerjaan></DashboardTabPekerjaan>
+        <DashboardTabPekerjaan />
       </View>
     );
   };
@@ -51,7 +51,7 @@ export const DashboardTabView = (props: any) => {
     return (
       <View style={{paddingHorizontal: s2, paddingVertical: s4}}>
         <Text style={Raleway.Body2}>Dashboard Peralatan</Text>
-        <DashboardTabPeralatan></DashboardTabPeralatan>
+        <DashboardTabPeralatan />
       </View>
     );
   };
@@ -93,6 +93,7 @@ export const DashboardTabView = (props: any) => {
           key: 'dashboardPeralatan',
           title: 'Dashboard Peralatan',
         },
-      ]}></DTabBar>
+      ]}
+    />
   );
 };

@@ -15,21 +15,21 @@ interface InterfaceDImage {
 }
 
 export const DImage = (props: InterfaceDImage) => {
-    return (
-        <Image
-            source={props.path}
-            style={{
-                width: props.width,
-                height: props.height,
-                borderRadius: props.borderRadius,
-                borderTopRightRadius: props.borderTopRightRadius,
-                borderTopLeftRadius: props.borderTopLeftRadius,
-                borderBottomRightRadius: props.borderBottomRightRadius,
-                borderBottomLeftRadius: props.borderBottomLeftRadius,
-                backgroundColor: props.backgroundColor ?? 'transparent',
-                tintColor: props.color,
-            }}
-            resizeMode={props.resizeMode ?? 'contain'}
-        />
-    );
-}
+  return (
+    <Image
+      source={props.path}
+      style={{
+        width: props.width,
+        height: props.height,
+        borderRadius: props.borderRadius,
+        borderTopRightRadius: props.borderTopRightRadius,
+        borderTopLeftRadius: props.borderTopLeftRadius,
+        borderBottomRightRadius: props.borderBottomRightRadius,
+        borderBottomLeftRadius: props.borderBottomLeftRadius,
+        backgroundColor: props.backgroundColor ?? 'transparent',
+        tintColor: props.color,
+      }}
+      resizeMode={props.resizeMode ?? 'contain'}
+    />
+  );
+};

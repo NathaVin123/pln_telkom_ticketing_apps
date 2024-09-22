@@ -22,16 +22,16 @@ export function LandingView() {
         width={150}
         height={150}
       />
-      <DSizedBox height={s8}></DSizedBox>
+      <DSizedBox height={s8} />
       <View
         style={{alignSelf: 'flex-start', paddingLeft: s2, paddingRight: s2}}>
         <Text style={Raleway.H1}>PLN Telkom Ticketing Apps</Text>
-        <DSizedBox height={s2}></DSizedBox>
+        <DSizedBox height={s2} />
         <Text style={Raleway.Overline1}>
           You can start your necessery in this apps, lets start your ticket here
         </Text>
       </View>
-      <DSizedBox height={s10}></DSizedBox>
+      <DSizedBox height={s10} />
       <View style={{alignSelf: 'flex-end', paddingRight: s2}}>
         <DButton
           iconPosition={'right'}
@@ -45,6 +45,6 @@ export function LandingView() {
       </View>
     </View>
   );
-};
+}
 
 export default LandingView;

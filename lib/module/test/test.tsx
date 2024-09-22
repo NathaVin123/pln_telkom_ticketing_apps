@@ -30,8 +30,8 @@ export default function TestView() {
 
   return (
     <>
-      <StatusBar translucent backgroundColor="transparent"></StatusBar>
-      <DAppBar title={'PLN Ticketing'}></DAppBar>
+      <StatusBar translucent backgroundColor="transparent" />
+      <DAppBar title={'PLN Ticketing'} />
       <GestureHandlerRootView style={{flex: 1}}>
         {/*<SafeAreaView style={{flex: 1}}>*/}
         <View
@@ -47,9 +47,7 @@ export default function TestView() {
             scrollEnabled={false}
             ref={scrollRef}
             refreshControl={
-              <RefreshControl
-                refreshing={refreshing}
-                onRefresh={onRefresh}></RefreshControl>
+              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
             }>
             <View
               style={{
@@ -74,8 +72,7 @@ export default function TestView() {
                   height={150}
                 />
               </View>
-              <DSizedBox
-                height={Dimensions.get('window').height / 2}></DSizedBox>
+              <DSizedBox height={Dimensions.get('window').height / 2} />
             </View>
           </ScrollView>
         </View>
@@ -87,7 +84,8 @@ export default function TestView() {
             <View style={{flex: 1, padding: s2}}>
               <Text style={Raleway.Caption1}>Test</Text>
             </View>
-          }></DBottomSheet>
+          }
+        />
         {/*</SafeAreaView>*/}
       </GestureHandlerRootView>
     </>

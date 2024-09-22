@@ -34,11 +34,11 @@ export const LoginViewModel = () => {
 
       const byPassLogin = true;
 
-      if(byPassLogin) {
+      if (byPassLogin) {
         await navigation.replace('DashboardView');
       }
 
-      console.log('Login Request : ' +JSON.stringify(loginData));
+      console.log('Login Request : ' + JSON.stringify(loginData));
 
       const response = await POST<LoginResponse>({
         path: 'login-mobile',
@@ -50,7 +50,7 @@ export const LoginViewModel = () => {
       console.log('Token:', response.data.token ?? '');
 
       if (response.data.success) {
-        if(response.data.token !== '') {
+        if (response.data.token !== '') {
           await AsyncStorage.setItem('userToken', response.data.token);
         }
 

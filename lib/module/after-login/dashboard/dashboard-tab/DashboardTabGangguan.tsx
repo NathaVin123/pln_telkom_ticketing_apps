@@ -41,7 +41,7 @@ export const DashboardTabGangguan = () => {
 
   return (
     <>
-      <DPieChartWithPercent data={data}></DPieChartWithPercent>
+      <DPieChartWithPercent data={data} />
     </>
   );
 };

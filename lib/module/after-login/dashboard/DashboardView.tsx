@@ -15,11 +15,11 @@ export const DashboardView = () => {
   const renderActiveTab = () => {
     switch (activeTab) {
       case 'home':
-        return <HomeDashboard></HomeDashboard>;
+        return <HomeDashboard />;
       case 'ticket':
-        return <WorkOrder></WorkOrder>;
+        return <WorkOrder />;
       case 'document':
-        return <Approval></Approval>;
+        return <Approval />;
       default:
         return <Text>Home</Text>;
     }
@@ -27,12 +27,13 @@ export const DashboardView = () => {
 
   return (
     <>
-      <StatusBar translucent backgroundColor="transparent"></StatusBar>
+      <StatusBar translucent backgroundColor="transparent" />
       <DAppBar
         // onBackPress={() => {
         //   controller.navigation.goBack();
         // }}
-        title={'PLN TELKOM Ticketing Apps'}></DAppBar>
+        title={'PLN TELKOM Ticketing Apps'}
+      />
       <View style={{flex: 1}}>{renderActiveTab()}</View>
       <DBottomBar activeTab={activeTab} setActiveTab={setActiveTab} />
     </>

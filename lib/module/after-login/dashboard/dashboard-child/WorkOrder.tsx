@@ -35,7 +35,8 @@ export const WorkOrder = () => {
             refreshControl={
               <RefreshControl
                 refreshing={controller.refreshing}
-                onRefresh={controller.onRefresh}></RefreshControl>
+                onRefresh={controller.onRefresh}
+              />
             }>
             <View
               style={{
@@ -60,8 +61,7 @@ export const WorkOrder = () => {
                   height={150}
                 />
               </View>
-              <DSizedBox
-                height={Dimensions.get('window').height / 2}></DSizedBox>
+              <DSizedBox height={Dimensions.get('window').height / 2} />
             </View>
           </ScrollView>
         </View>
@@ -72,15 +72,16 @@ export const WorkOrder = () => {
           body={
             <View style={{flex: 1, padding: s2}}>
               <Text style={Raleway.H2}>Open Ticketing</Text>
-              <DSizedBox height={s2}></DSizedBox>
+              <DSizedBox height={s2} />
               <Text style={Raleway.Body4}>Ticketing Details</Text>
-              <DSizedBox height={s3}></DSizedBox>
+              <DSizedBox height={s3} />
               <DTextField
                 label={'ID Ticket'}
                 onChangeText={(e: string) => {
                   controller.setIdTicket(e);
-                }}></DTextField>
-              <DSizedBox height={s2}></DSizedBox>
+                }}
+              />
+              <DSizedBox height={s2} />
               <DDatePicker
                 disabled={true}
                 isDate={true}
@@ -90,25 +91,22 @@ export const WorkOrder = () => {
                 label={'Tanggal'}
                 mode={'date'}
                 value={controller.tanggalTicket}
-                onChangeText={(e: string) =>
-                  controller.setTanggalTicket(e)
-                }></DDatePicker>
+                onChangeText={(e: string) => controller.setTanggalTicket(e)}
+              />
               <DDropdown
                 data={controller.dataLokasiTicket}
                 label={'Lokasi'}
                 placeholder={'Lokasi'}
-                value={item =>
-                  controller.setLokasiTicket(item.title)
-                }></DDropdown>
-              <DSizedBox height={s2}></DSizedBox>
+                value={item => controller.setLokasiTicket(item.title)}
+              />
+              <DSizedBox height={s2} />
               <DDropdown
                 data={controller.dataInputTicket}
                 label={'Input Ticket'}
                 placeholder={'Input Ticket'}
-                value={item =>
-                  controller.setInputTicket(item.title)
-                }></DDropdown>
-              <DSizedBox height={s2}></DSizedBox>
+                value={item => controller.setInputTicket(item.title)}
+              />
+              <DSizedBox height={s2} />
               <View
                 style={{flex: 1, flexDirection: 'row', alignSelf: 'flex-end'}}>
                 <View style={{width: Dimensions.get('window').width / 2}}>
@@ -123,7 +121,8 @@ export const WorkOrder = () => {
                 </View>
               </View>
             </View>
-          }></DBottomSheet>
+          }
+        />
       </GestureHandlerRootView>
     </>
   );

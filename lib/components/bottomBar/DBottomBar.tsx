@@ -7,7 +7,10 @@ interface DBottomBarProps {
   setActiveTab: (tab: string) => void;
 }
 
-export const DBottomBar: React.FC<DBottomBarProps> = ({ activeTab, setActiveTab }) => {
+export const DBottomBar: React.FC<DBottomBarProps> = ({
+  activeTab,
+  setActiveTab,
+}) => {
   // const [activeTab, setActiveTab] = useState('home');
 
   return (
@@ -69,26 +72,26 @@ export const DBottomBar: React.FC<DBottomBarProps> = ({ activeTab, setActiveTab 
 };
 
 const styles = StyleSheet.create({
-    bottomBar: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        backgroundColor: 'white',
-        paddingVertical: 10,
-        borderTopWidth: 1,
-        borderTopColor: '#ddd',
-    },
-    button: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 10,
-        borderRadius: 10,
-    },
-    // activeButton: {
-    //     backgroundColor: '#1E90FF',
-    // },
-    icon: {
-        width: 50,
-        height: 50,
-    },
+  bottomBar: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    paddingVertical: 10,
+    borderTopWidth: 1,
+    borderTopColor: '#ddd',
+  },
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 10,
+    borderRadius: 10,
+  },
+  // activeButton: {
+  //     backgroundColor: '#1E90FF',
+  // },
+  icon: {
+    width: 50,
+    height: 50,
+  },
 });
